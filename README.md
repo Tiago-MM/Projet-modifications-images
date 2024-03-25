@@ -2,10 +2,13 @@
 
 Dans le cadre du projet d’informatique scientifique, nous avons créé un programme POO en C# permettant de lire et écrire une image au format .bmp, ainsi qu'à effectuer divers traitements d'image, création d'images, et une implémentation d'algorithme de compression(Huffman). Pour ce faire nous avons utilisé différentes classes :la classe MyImage, la classe Pixel, la classe Menu pour l’interface et enfin la classe Nœud et ArbreHuffman pour la compression Huffman. Le but étant de recréer la classe Bitmap, une classe très utilisée en C#.
 LA STRUCTURE :
+
 • La classe Pixel :
 La classe Pixel est utilisée dans le projet afin de représenter les pixels d'une image au format bmp. Chaque pixel dans une image est composé de valeurs de couleur pour les composantes rouge, verte et bleue (RGB), qui déterminent la couleur du pixel. Ainsi cette classe est essentiel pour représenter l’image à l’aide d’une matrice de pixels. De nombreuses méthodes sont présentes, notamment GetClosestColor() qui, à l’aide de la méthode CalculateColorDistance(), trouve la couleur la plus proche d’un pixel.
+
 • La classe MyImage :
 C’est la classe essentielle à ce projet, elle permet de manipuler des images au format bmp. Cette classe comprend des méthodes pour lire une image à partir d'un fichier .bmp donné, effectue un traitement simple d'image comme le passage d'une photo couleur à une photo en nuances de gris et en noir et blanc, et pour sauvegarder l'image toujours au format .bmp. La classe MyImage utilise une classe Pixel pour représenter les pixels de l'image. Ensuite, nous avons mis en place des méthodes pour effectuer des traitements d'image plus avancés, tels que la rotation d'une image avec un angle quelconque et l'agrandissement d'une image avec un coefficient quelconque. Ces traitements sont réalisés en manipulant les pixels de l'image à l'aide des méthodes de la classe MyImage et de la classe Pixel. Nous avons également implémenté des filtres basés sur une méthode de convolution, qui permet de réaliser une détection de contour, de renforcement des bords, de flou et de repoussage sur une image. Nous avons mis en place la création d'une image décrivant une fractale en utilisant des algorithmes mathématiques appropriés, ainsi que cacher et trouver une image dans une autre image en utilisant des techniques de stéganographie.
+
 • La classe Menu :
 C’est là où l’utilisateur pourra choisir l’image à modifier, les fonctions à utiliser etc, il y a deux affichages, un affichage classique (affichage1) et un affichage avec des dessins (affichage2).
 • La classe Noeud :
